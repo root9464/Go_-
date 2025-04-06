@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 //go:noinline
 //go:asm
@@ -14,8 +16,6 @@ type Node struct {
 
 func main() {
 	head := initList(1)
-	_ = head
-
-	fmt.Println(head)
-	fmt.Println(head.data)
+	fmt.Println("Head node:", head)
+	fmt.Println("Head data:", head.data)
 }
